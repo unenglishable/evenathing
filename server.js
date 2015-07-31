@@ -2,7 +2,7 @@ var Hapi = require('hapi');
 var async = require('async');
 var path = require('path');
 var routes = require(path.join(__dirname, 'routes'));
-var config = require(path.join(__dirname, 'config'));
+var config = require(path.join(__dirname, 'thing'));
 
 module.exports = function(callback) {
   async.waterfall([
