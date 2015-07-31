@@ -7,7 +7,7 @@ html {
 body {
   background-color: #fff;
   color: #333;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Shadows Into Light Two", "Comic Sans MS", cursive, sans-serif;
   font-weight: 200;
   line-height: 1.5;
   text-align: center; }
@@ -34,6 +34,7 @@ a {
     color: #F5A623; }
 
 input[type="text"] {
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid #cccccc;
   color: #F5A623;
@@ -49,7 +50,12 @@ input[type="submit"] {
   border: none;
   color: #fff;
   font-size: 1.5rem;
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  transition: all ease 0.2s;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); }
+  input[type="submit"]:hover {
+    background-color: #ffa819;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15); }
 
 ::-webkit-input-placeholder,
 ::-moz-placeholder {
