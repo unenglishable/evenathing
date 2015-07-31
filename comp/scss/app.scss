@@ -66,9 +66,12 @@ input[type="submit"] {
 	opacity: .7;
 }
 
+
 // layout
 .container {
 	@include outer-container;
+	margin-top: 6rem;
+	margin-top: 20vh;
 }
 
 section {
