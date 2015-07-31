@@ -14,7 +14,7 @@ routes.build = function(callback) {
       file = path.join(__dirname, file);
       fs.stat(file, function(err, stats) {
         if (stats && stats.isDirectory()) {
-          routeArray.push(require(file));
+          routeArray.push(require(path.join(file, '/')));
         }
         return reduceCb(err, routeArray);
       });
