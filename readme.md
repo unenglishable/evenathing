@@ -8,9 +8,9 @@
     npm install
     ```
 
-2. Create a config.js file or a thing.js file (or copy the example.thing.js)
+2. Create a thing.js file (or copy the example.thing.js)
 
-    `thing.js/config.js`
+    `thing.js`
 
     ```javascript
     var config = module.exports = {};
