@@ -1,14 +1,102 @@
 @import "bourbon/bourbon";
-// @import "grid-settings";
 @import "neat/neat";
+@import "variables";
 
+body {
+	background-color: $color-bg;
+	color: $color-body;
+	font-family: $font-base;
+	font-weight: 200;
+	line-height: 1.5;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 200;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	border-bottom: 1px solid red;
+	border-color: transparent;
+	text-decoration: none;
+	transition: all ease 0.2s;
+
+	&:hover {
+		border-color: $color-primary;
+		color: $color-primary;
+		// text-decoration: underline;
+	}
+}
+
+// form elements
+input[type="text"] {
+	border: none;
+	border-bottom: 1px solid $color-border;
+	color: $color-primary;
+	font-size: 4rem;
+	margin: 0;
+	outline: none;
+	padding: 1rem;
+	text-align: center;
+}
+
+input[type="submit"] {
+	background-color: $color-primary;
+	border-radius: 6px;
+	border: none;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder {
+	color: blue;
+	opacity: .7;
+}
+
+// layout
 .container {
 	@include outer-container;
 }
 
-.main {
-	@include span-columns(6);
-	@include shift(3);
+section {
+	@include span-columns(8);
+	@include shift(2);
 
-	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.allthethings {
+	h2 {
+		font-size: 3rem;
+	}
+
+	input[type="submit"] {
+		margin-top: 2rem;
+	}
+}
+
+.moar-things {
+	font-size: 1.5rem;
+	margin-top: 4rem;
+
+	a {
+		color: $color-border;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
 }
