@@ -59,13 +59,6 @@ input[type="submit"] {
 	color: #fff;
 	font-size: 1.5rem;
 	padding: 1rem 2rem;
-	transition: all ease 0.2s;
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
-
-	&:hover {
-		background-color: saturate($color-primary, 30%);
-		box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
-	}
 }
 
 ::-webkit-input-placeholder,
@@ -109,5 +102,17 @@ section {
 		&:hover {
 			color: $color-primary;
 		}
+	}
+}
+
+
+// Buttons
+.btn {
+transition: all ease 0.2s;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+
+	&:hover {
+		background-color: saturate($color-primary, 30%);
+		box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
 	}
 }

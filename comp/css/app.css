@@ -50,12 +50,7 @@ input[type="submit"] {
   border: none;
   color: #fff;
   font-size: 1.5rem;
-  padding: 1rem 2rem;
-  transition: all ease 0.2s;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); }
-  input[type="submit"]:hover {
-    background-color: #ffa819;
-    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15); }
+  padding: 1rem 2rem; }
 
 ::-webkit-input-placeholder,
 ::-moz-placeholder {
@@ -95,5 +90,12 @@ section {
     color: #cccccc; }
     .moar-things a:hover {
       color: #F5A623; }
+
+.btn {
+  transition: all ease 0.2s;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); }
+  .btn:hover {
+    background-color: #ffa819;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15); }
 
 /*# sourceMappingURL=app.css.map */
