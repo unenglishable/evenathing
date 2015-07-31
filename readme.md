@@ -26,3 +26,9 @@
     ```bash
     cp example.thing.js thing.js
     ```
+
+3. Start the thing.
+
+    ```bash
+    npm start
+    ```
